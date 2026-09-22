@@ -64,3 +64,5 @@ The pages this guide is grounded on do not state pricing or usage limits. You lo
 ## When Begin.sh is the better fit
 
 Claude Code in the terminal earns its setup when you have a project and you will keep working in it: reading code, making changes, using Git, fixing bugs. If the whole task is produce a website or a mobile app from a description, you do not need a terminal, a repository or permission settings to get it. [Try Begin.sh - turn a prompt or a URL into a downloadable static site or Expo app](https://begin.sh?utm_source=github&utm_medium=ugc&utm_campaign=claude-terminal&utm_content=readme-top&utm_term=tier-r). Describe the site or paste a URL to clone, download the zip, and host it wherever you already host things; nothing about hosting, backend or auth is bundled, so there is nothing to keep running.
+
+_Last reviewed: 2026-09-22_
